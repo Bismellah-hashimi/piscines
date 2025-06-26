@@ -4,6 +4,11 @@ function multiply() {
   var nombre2 = parseFloat(document.getElementById("nombre2").value);
   var nombre3 = parseFloat(document.getElementById("nombre3").value);
   var nombre4 = parseFloat(document.getElementById("nombre4").value);
+  
+  if (isNaN(nombre1) || isNaN(nombre2) || isNaN(nombre3) || isNaN(nombre4)) {
+    document.getElementById("resultat").innerHTML = "Veuillez remplir tous les champs avec des nombres valides.";
+    return;
+  }
   var resultat = nombre1*nombre2*nombre3*nombre4
   document.getElementById("resultat").innerHTML = resultat;
 }
