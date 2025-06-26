@@ -17,7 +17,8 @@
     </menu>
     <div class="container3">
         <h1>Prix du m3: 1000CHF</h1>
-        <diu class="moniteur">
+        <div class="moniteur">
+            <div class="form">
         <label for="Longueur">Longueur:</label>
 
         <input type="text" id="nombre1"><br>
@@ -32,18 +33,21 @@
 
         <label for="Tital m3">Total m3:</label>
 
-        <input type="text" id="nombre4" ><br>
+        <input type="text" id="nombre4" disabled ><br>
 
         <label for="Total Prix">Total Prix</label>
 
-        <input type="text" id="resultat"  ><br>
-        
+        <input type="text" id="resultat" disabled ><br>
+        </div>
+    </div>
+<br>
+<span id="error"></span>
+<br>
+
         <button onclick="multiply()" >
             calculer
    </button>
   
-    </div>
-    </div>
     <script src="../script/main.js"></script>
     </body>
     </html>

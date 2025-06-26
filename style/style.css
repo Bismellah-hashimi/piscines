@@ -90,5 +90,16 @@ width: 100%;
 
 .moniteur{
     display: inline-block;
+}
 
+button{
+    margin-top: 2%;
+}
+
+#error{
+    color: red;
+}
+
+.form{
+    text-align: right;
 }
